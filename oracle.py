@@ -40,4 +40,8 @@ for path in paths:
     cost=sum(G[path[i]][path[i+1]]['cost'] for i in range(len(path)-1))
     paths_cost.append((path,cost))
 
-paths_cost
+paths_cost.sort(key=lambda x:x[1])
+
+oracle=paths_cost[0][1]
+sp=" --> ".join(paths_cost[0][0])
+print(sp," ",oracle)
