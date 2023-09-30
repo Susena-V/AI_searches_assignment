@@ -18,9 +18,9 @@ This assignment consists of 12 search algorithms
 
 8.Branch and Bound greedy
 
-9.Branch and Bound + Extended List
+9.Branch and Bound greedy + Extended List
 
-10.Branch and Bound + heuristic
+10.Branch and Bound + heuristic + cost
 
 11.Branch and Bound Greedy heuristic
 
