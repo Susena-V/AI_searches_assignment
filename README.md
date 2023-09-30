@@ -2,13 +2,13 @@ AI ASSIGNMENT
 
 This assignment consists of 12 search algorithms
 
-1.BMS
+1.British Museum Search
 
-2.DFS
+2.Depth First Search
 
-3.BFS
+3.Breadth First Search
 
-4.HC
+4.Hill Climbing
 
 5.Beam
 
