@@ -1,6 +1,6 @@
-AI ASSIGNMENT
+# **AI ASSIGNMENT**
 
-This assignment consists of 12 search algorithms
+## This assignment consists of 12 search algorithms
 
 1.British Museum Search
 
@@ -27,4 +27,4 @@ This assignment consists of 12 search algorithms
 12.A*
 
 
-(Had help)
+*(Had help)*
