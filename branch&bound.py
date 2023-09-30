@@ -61,7 +61,6 @@ while not priority_queue.empty():
     current_graph = copy.deepcopy(G)
 
     min_cost_path = path
-    subgraph = current_graph.subgraph(min_cost_path)
 
     for neighbor in current_graph[current_node]:
         neighbor_cost = current_graph[current_node][neighbor]['cost']
