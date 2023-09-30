@@ -81,7 +81,7 @@ if goal in explored_nodes:
     else:
         print("Algorithm did not match the oracle path.")
 else:
-    print("No path to the destination exists.")
+    print("No path to the goal exists.")
 
 edges_in_bb_path=[(bb_path[i],bb_path[i+1]) for i in range(len(bb_path)-1)]
 
