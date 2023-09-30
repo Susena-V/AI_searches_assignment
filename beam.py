@@ -33,6 +33,7 @@ def create_Graph():
 G,start,goal,Heuristic=create_Graph()
 
 nx.draw(G,with_labels=True,node_size=1000,node_color='purple',font_size=10)
+plt.show()
 
 def beam(graph, start, goal, beam_width,heuristic):
     initial_path = [start]
