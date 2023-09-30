@@ -5,7 +5,7 @@ def create_Graph():
   n=int(input("Enter no of nodes: "))
   nodes=[]
 
-  G = nx.Graph()
+  G = nx.DiGraph()
 
   for i in range(n):
     node=input(f'Enter node {i+1}: ')
@@ -45,3 +45,16 @@ paths_cost.sort(key=lambda x:x[1])
 oracle=paths_cost[0][1]
 sp=" --> ".join(paths_cost[0][0])
 print(sp," ",oracle)
+oracle_path=paths_cost[0][0]
+
+for path, cost in paths_cost:
+    p = " -> ".join(path)
+    print(f"The Path Followed is {p} and the cost of it is {cost}")
+    path_graph = G.edge_subgraph([(path[i], path[i+1]) for i in range(len(path)-1)])
+
+    pos = nx.shell_layout(path_graph)
+    nx.draw_networkx_nodes(path_graph, pos)
+    nx.draw_networkx_edges(path_graph, pos)
+    nx.draw_networkx_labels(path_graph, pos)
+    plt.title(f"Path: {' -> '.join(path)}\nCost: {cost}")
+    plt.show()
