@@ -49,7 +49,7 @@ oracle_path=paths_cost[0][0]
 print('-->'.join(oracle_path))
 
 priority_queue = PriorityQueue()
-priority_queue.put((0, ["A"]))
+priority_queue.put((0, [start]))
 explored_nodes = []
 
 best_known_costs = {}
@@ -72,7 +72,7 @@ while not priority_queue.empty():
                 new_path = path + [neighbor]
                 priority_queue.put((total_cost, new_path))
 
-if "E" in explored_nodes:
+if goal in explored_nodes:
     bb_path = path
     bb_cost = current_cost
     print("Final Chosen Path:", " -> ".join(bb_path))
